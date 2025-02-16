@@ -11,7 +11,7 @@ function Gallery() {
         currentAudio.pause();
       }
     };
-  }, []);
+  }, [currentAudio]);
 
   const galleryItems = [
     {
@@ -19,7 +19,7 @@ function Gallery() {
       image: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Shivaji_British_Museum.jpg',
       title: 'Portrait of Shivaji Maharaj',
       description: 'A historic portrait of Chhatrapati Shivaji Maharaj from the British Museum collection.',
-      audioUrl: 'https://www2.cs.uic.edu/~i101/SoundFiles/StarWars60.wav'
+      audioUrl: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3'
     },
     {
       id: 2,
@@ -45,13 +45,15 @@ function Gallery() {
     }
   }, [currentAudio]);
 
-  const handleImageClick = async (audioUrl: string) => {
+  const handleAudioPlayback = async (audioUrl: string) => {
+    // If the same audio is playing, stop it.
     if (currentAudio?.src === audioUrl) {
       stopCurrentAudio();
       setCurrentAudio(null);
       return;
     }
 
+    // Stop any currently playing audio.
     stopCurrentAudio();
 
     try {
@@ -92,7 +94,7 @@ function Gallery() {
           >
             <div 
               className="relative cursor-pointer"
-              onClick={() => handleImageClick(item.audioUrl)}
+              onClick={() => handleAudioPlayback(item.audioUrl)}
             >
               <img 
                 src={item.image} 
@@ -108,6 +110,12 @@ function Gallery() {
             <div className="p-6">
               <h3 className="text-xl font-medieval text-royal-800 mb-2">{item.title}</h3>
               <p className="text-royal-700">{item.description}</p>
+              <button
+                onClick={() => handleAudioPlayback(item.audioUrl)}
+                className="mt-4 w-full bg-royal-500 text-white px-4 py-2 rounded-md hover:bg-royal-600 transition duration-300"
+              >
+                Click here to listen audio book
+              </button>
             </div>
           </motion.div>
         ))}
