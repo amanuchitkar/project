@@ -15,6 +15,11 @@ function Navbar() {
         { path: '/page1', label: 'Page 1' },
         { path: '/page2', label: 'Page 2' },
         { path: '/page3', label: 'Page 3' },
+        { path: '/page4', label: 'Page 4' },
+        { path: '/page5', label: 'Page 5' },
+        { path: '/page6', label: 'Page 6' },
+        { path: '/page7', label: 'Page 7' },
+        { path: '/page8', label: 'Page 8' },
       ],
     },
     { path: '/gallery', label: 'Gallery' },
@@ -26,7 +31,7 @@ function Navbar() {
         <div className="flex justify-between h-16">
           {/* Brand Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <Link to="/" className="font-medieval text-2xl text-royal-800">
+            <Link to="/" className="font-medieval text-xl text-royal-800">
               Shivaji Maharaj
             </Link>
           </div>
@@ -37,12 +42,27 @@ function Navbar() {
                 <div key={index} className="relative">
                   <button
                     onClick={() => setInfoMenuOpen(!isInfoMenuOpen)}
-                    className="px-4 py-2 text-royal-800 hover:bg-royal-200"
+                    className="px-4 py-2 text-royal-800 flex items-center"
                   >
                     {link.label}
+                    <svg
+                      className={`ml-2 h-4 w-4 transition-transform transform ${isInfoMenuOpen ? 'rotate-180' : ''}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
                   </button>
                   {isInfoMenuOpen && (
-                    <div className="absolute top-full left-0 bg-white shadow-lg rounded-md">
+                    <div className="absolute top-full left-0 bg-royal-100 z-10 w-full shadow-lg rounded-md">
                       {link.subLinks.map((subLink) => (
                         <Link
                           key={subLink.path}
@@ -117,9 +137,24 @@ function Navbar() {
                 <div key={index} className="relative">
                   <button
                     onClick={() => setInfoMenuOpen(!isInfoMenuOpen)}
-                    className="block px-3 py-2 text-royal-800 hover:bg-royal-200 w-full text-left"
+                    className="block px-3 py-2 text-royal-800 hover:bg-royal-200 w-full text-left flex items-center justify-between"
                   >
                     {link.label}
+                    <svg
+                      className={`ml-2 h-4 w-4 transition-transform transform ${isInfoMenuOpen ? 'rotate-180' : ''}`}
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M19 9l-7 7-7-7"
+                      />
+                    </svg>
                   </button>
                   {isInfoMenuOpen && (
                     <div className="pl-4">

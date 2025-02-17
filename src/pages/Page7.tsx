@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-function Page1() {
+function Page7() {
   // Define the page data, which includes multiple images
   const pageData = {
     title: 'The Legacy of Chhatrapati Shivaji Maharaj',
@@ -111,4 +111,4 @@ function Page1() {
   );
 }
 
-export default Page1;
+export default Page7;
