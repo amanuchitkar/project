@@ -76,14 +76,14 @@ function Page2() {
       <motion.h1 
         initial={{ opacity: 0, y: -20 }} 
         animate={{ opacity: 1, y: 0 }}
-        className="text-2xl font-serif text-[#8B4513] mb-4"
+        className="text-xl font-medieval font-bold text-royal-800 mb-4"
+
       >
         {pageData.title}
       </motion.h1>
       
       <div>
-        <p className="text-sm text-[#704214] font-serif">{pageData.description}</p>
-      </div>
+        <p className="text-xs text-royal-500 font-serif">{pageData.description}</p>      </div>
       
       <motion.img 
         src={pageData.images[currentImageIndex]}  // Display the current image from the array

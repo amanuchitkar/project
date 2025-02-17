@@ -16,21 +16,21 @@ function Gallery() {
   const galleryItems = [
     {
       id: 1,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/b/b1/Shivaji_British_Museum.jpg',
+      image: 'https://images.fineartamerica.com/images-medium-large-5/chattrapati-shivaji-maharaj-prem-bhavsar.jpg',
       title: 'Portrait of Shivaji Maharaj',
       description: 'A historic portrait of Chhatrapati Shivaji Maharaj from the British Museum collection.',
       audioUrl: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3'
     },
     {
       id: 2,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/3/35/Raigad_Fort_Maharashtra.jpg',
+      image: 'https://www.discovermh.com/wp-content/uploads/2020/07/rajgad-fort.jpg',
       title: 'Raigad Fort',
       description: 'The capital fort of Shivaji Maharaj\'s Maratha Empire, situated in Maharashtra.',
       audioUrl: 'https://www2.cs.uic.edu/~i101/SoundFiles/ImperialMarch60.wav'
     },
     {
       id: 3,
-      image: 'https://upload.wikimedia.org/wikipedia/commons/e/ec/Pratapgad_fort_maharashtra.jpg',
+      image: 'https://imgmedia.lbb.in/media/2018/09/5b988b0819ec60662758cb5e_1536723720903.jpg',
       title: 'Pratapgad Fort',
       description: 'The site of the famous battle between Shivaji Maharaj and Afzal Khan.',
       audioUrl: 'https://www2.cs.uic.edu/~i101/SoundFiles/CantinaBand60.wav'
@@ -93,18 +93,18 @@ function Gallery() {
             className="bg-white rounded-lg shadow-lg overflow-hidden"
           >
             <div 
-              className="relative cursor-pointer"
+              className="relative cursor-pointer flex justify-center"
               onClick={() => handleAudioPlayback(item.audioUrl)}
             >
               <img 
-                src={item.image} 
-                alt={item.title}
-                className="w-full h-64 object-cover transition-transform duration-300 hover:scale-105"
+              src={item.image} 
+              alt={item.title}
+              className="w-auto h-64 object-cover transition-transform duration-300 text-center hover:scale-105"
               />
               {currentAudio?.src === item.audioUrl && isPlaying && (
-                <div className="absolute bottom-4 right-4 bg-royal-500 text-white px-3 py-1 rounded-full">
-                  <span className="animate-pulse">▶</span> Playing
-                </div>
+              <div className="absolute bottom-4 right-4 bg-royal-500 text-white px-3 py-1 rounded-full">
+                <span className="animate-pulse">▶</span> Playing
+              </div>
               )}
             </div>
             <div className="p-6">
