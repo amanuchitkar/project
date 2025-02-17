@@ -5,10 +5,18 @@ import { useState } from 'react';
 function Navbar() {
   const location = useLocation();
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [isInfoMenuOpen, setInfoMenuOpen] = useState(false);
 
   const links = [
     { path: '/', label: 'Home' },
-    { path: '/information', label: 'Information' },
+    {
+      label: 'Information',
+      subLinks: [
+        { path: '/page1', label: 'Page 1' },
+        { path: '/page2', label: 'Page 2' },
+        { path: '/page3', label: 'Page 3' },
+      ],
+    },
     { path: '/gallery', label: 'Gallery' },
   ];
 
@@ -24,22 +32,46 @@ function Navbar() {
           </div>
           {/* Desktop Links */}
           <div className="hidden sm:flex items-center">
-            {links.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                className="relative px-4 py-2 nav-link"
-              >
-                {link.label}
-                {location.pathname === link.path && (
-                  <motion.div
-                    layoutId="underline"
-                    className="absolute bottom-0 left-0 right-0 h-0.5 bg-royal-500"
-                    initial={false}
-                    transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                  />
-                )}
-              </Link>
+            {links.map((link, index) => (
+              link.subLinks ? (
+                <div key={index} className="relative">
+                  <button
+                    onClick={() => setInfoMenuOpen(!isInfoMenuOpen)}
+                    className="px-4 py-2 text-royal-800 hover:bg-royal-200"
+                  >
+                    {link.label}
+                  </button>
+                  {isInfoMenuOpen && (
+                    <div className="absolute top-full left-0 bg-white shadow-lg rounded-md">
+                      {link.subLinks.map((subLink) => (
+                        <Link
+                          key={subLink.path}
+                          to={subLink.path}
+                          className={`block px-4 py-2 ${location.pathname === subLink.path ? 'bg-royal-500 text-white' : 'text-royal-800 hover:bg-royal-200'}`}
+                        >
+                          {subLink.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  className="relative px-4 py-2 nav-link"
+                >
+                  {link.label}
+                  {location.pathname === link.path && (
+                    <motion.div
+                      layoutId="underline"
+                      className="absolute bottom-0 left-0 right-0 h-0.5 bg-royal-500"
+                      initial={false}
+                      transition={{ type: 'spring', stiffness: 300, damping: 30 }}
+                    />
+                  )}
+                </Link>
+              )
             ))}
           </div>
           {/* Mobile Menu Button */}
@@ -80,19 +112,40 @@ function Navbar() {
       {isMobileMenuOpen && (
         <div className="sm:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1">
-            {links.map((link) => (
-              <Link
-                key={link.path}
-                to={link.path}
-                onClick={() => setMobileMenuOpen(false)}
-                className={`block px-3 py-2 rounded-md text-base font-medium ${
-                  location.pathname === link.path
-                    ? 'bg-royal-500 text-white'
-                    : 'text-royal-800 hover:bg-royal-200'
-                }`}
-              >
-                {link.label}
-              </Link>
+            {links.map((link, index) => (
+              link.subLinks ? (
+                <div key={index} className="relative">
+                  <button
+                    onClick={() => setInfoMenuOpen(!isInfoMenuOpen)}
+                    className="block px-3 py-2 text-royal-800 hover:bg-royal-200 w-full text-left"
+                  >
+                    {link.label}
+                  </button>
+                  {isInfoMenuOpen && (
+                    <div className="pl-4">
+                      {link.subLinks.map((subLink) => (
+                        <Link
+                          key={subLink.path}
+                          to={subLink.path}
+                          onClick={() => setMobileMenuOpen(false)}
+                          className={`block px-3 py-2 rounded-md text-base font-medium ${location.pathname === subLink.path ? 'bg-royal-500 text-white' : 'text-royal-800 hover:bg-royal-200'}`}
+                        >
+                          {subLink.label}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ) : (
+                <Link
+                  key={link.path}
+                  to={link.path}
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`block px-3 py-2 rounded-md text-base font-medium ${location.pathname === link.path ? 'bg-royal-500 text-white' : 'text-royal-800 hover:bg-royal-200'}`}
+                >
+                  {link.label}
+                </Link>
+              )
             ))}
           </div>
         </div>
