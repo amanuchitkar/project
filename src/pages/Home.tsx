@@ -99,7 +99,7 @@ function Home() {
               Britannica - Chhatrapati Shivaji Maharaj
             </a>
             <a 
-              href="https://shivajimaharajfoundation.org" 
+              href="https://shivajimaharajfoundation.com" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="text-blue-500 hover:underline"
