@@ -1,36 +1,28 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Audio2 from '../assets/audio/Page2.mp3'
+
 
 function Page2() {
   // Define the page data, which includes multiple images
   const pageData = {
-    title: 'The Legacy of Chhatrapati Shivaji Maharaj',
-    description: 'Discover the life and achievements of Shivaji Maharaj, the founder of the Maratha Empire.',
+    title: 'जलपती',
+    description: 'ज्याचे आरमार त्याचा समुद्र',
     images: [
-      'https://www.citybit.in/wp-content/uploads/2024/07/Raigad-Fort-Photos-1024x576.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb2ogFfg7gJu0RDQ5OBgYA1fkIXSaxVzDTw&s',
-      'https://sanketnow.com/wp-content/swift-ai/images/wp-content/uploads/2020/05/Raigad-Photography-9-jpg.webp',  // Add more images as needed
+      'https://i.pinimg.com/736x/59/9a/9a/599a9a53fa8444e6b57a606b72752612.jpg',  // Add more images as needed
     ],
-    audioUrl: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3',
-    fullInfo: `छत्रपती शिवाजी महाराज हे एक दूरदर्शी नेतृत्व आणि शूर योद्धे होते ज्यांनी १७व्या शतकात मराठा साम्राज्याची स्थापना केली.
-    
-    त्यांच्या युद्धनीती, प्रगत प्रशासन आणि सर्व धर्मांबद्दलच्या सन्मानामुळे ते प्रसिद्ध होते. रायगड आणि प्रतापगड यांसारखी त्यांची दुर्गे त्यांच्या गौरवशाली इतिहासाचे साक्षीदार आहेत.
-    
-    त्यांच्या नौदल शक्ती आणि प्रशासनाने मजबूत आणि सशक्त साम्राज्याची पायाभरणी केली.
-    
-    शिवाजी महाराजांनी हिंदवी स्वराज्याची संकल्पना मांडली आणि ती प्रत्यक्षात आणण्यासाठी अपार मेहनत घेतली.
-    
-    त्यांनी शिस्तबद्ध सेना निर्माण केली, गनिमी काव्याने शत्रूवर विजय मिळवला आणि शेतकरी, व्यापारी तसेच सामान्य जनतेचे संरक्षण करण्यासाठी ठोस धोरणे आखली.
-    
-    त्यांचा राज्याभिषेक १६७४ मध्ये रायगड किल्ल्यावर मोठ्या थाटामाटात पार पडला.
-    
-    त्यांनी मजबूत किल्ले, उत्कृष्ट जलवाहतूक आणि प्रभावी गुप्तचर यंत्रणा विकसित केली.
-    
-    त्यांचा न्यायप्रिय आणि कणखर स्वभाव मराठा साम्राज्याच्या वाढीस पोषक ठरला.
-    
-    महाराजांनी प्रशासकीय सुधारणा घडवून आणल्या, विविध जाती-धर्मांच्या लोकांना बरोबर घेऊन साम्राज्य वाढवले.
-    
-    त्यांच्या पराक्रमामुळे ते आजही भारतीय इतिहासातील प्रेरणादायी नेतृत्व मानले जातात.`
+    audioUrl: Audio2,
+    fullInfo: `आरमार म्हणजे स्वतंत्र येक राज्यांगच आहे. जैसे ज्यास अश्वबल त्याची पृथ्वी प्रजा आहे. तसेच ज्याजवळ आरमार त्याचा समुद्र.... याकरिता आरमार अवश्यमेव करावे..
+
+कोकणात स्वराज्य विस्तार करताना तिथल्या व्यापारांवर जर मराठी अंमल हवा तर मराठी आरमार मजबुत हवे. ही आरमार निर्मिती धारणा असावी.
+
+सुरुवातीच्या काळात थेट समुद्र किनाऱ्यावरील बंदर आणि जलदुर्ग स्वराज्याच्या ताब्यात नसल्याने, समुद्रातून ४० कि.मी. आत वसईच्या खाडीत उल्हास नदीच्या काठावर दुर्गाडी इथ आणि नंतर धरमतर खाडीतून आत भोगावती नदीच्या किनारी पेण इथे महाराजांनी आरमार निर्मितीची मुहूर्त वेढ रोवली
+
+स्वराज्यातील किनारी प्रदेशा व्यतिरिक्त व्यापारासाठीही आरमाराचा उपयोग झाला. आपल्या आरमाराच्या संरक्षणात महाराजांना आपली बंदरे महाड, संगमेश्वर तसेच राजापुरी, इ. बंदरांचा विकास करत एकुण व्यापार वाढवायचा होता. त्यासाठी इतर व्यापारांचे स्वराज्याच्या बंदरात स्वागत होते.
+
+सिंधुदुर्ग, सुवर्णदुर्ग, कुलाबा, खांदेरी इ. बेटांवरील किल्ले तसेच गोपाळगड, बाणकोट, कोरलाई, रेवदंडा, अरणाला, वसई, भोपाळगड, देवगड, जयगड व पुर्णगड इ. सीमेवरील दुर्ग बांधून किनारा सुरक्षित केला. आरमारच्या दृष्टीने कोकणातील खाड्या जहाजांसाठी उत्कृष्ठ आसरा होत्या. आरमारी संरक्षणाच्या दृष्टीने गिरीदुर्ग आणि जलदुर्गाची बांधणी आणि नवी संरक्षक स्थळे निर्माण करण्यासाठी किनारपट्टीवरील बेटे आणि समुद्रापर्यंत घुसलेले डोंगरसुळके मोक्याचा जागा पुरवायला सज्ज होते.
+
+`
   };
 
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
@@ -57,19 +49,19 @@ function Page2() {
   }, [audio]);
 
   const handleAudioPlayback = () => {
-    if (!pageData.audioUrl) return;
+  if (!pageData.audioUrl) return;
 
-    if (audio) {
-      audio.pause();
-      setIsPlaying(false);
-      setAudio(null);
-    } else {
-      const newAudio = new Audio(pageData.audioUrl);
-      newAudio.play().then(() => setIsPlaying(true));
-      newAudio.addEventListener('ended', () => setIsPlaying(false));
-      setAudio(newAudio);
-    }
-  };
+  if (audio) {
+    audio.pause();
+    setIsPlaying(false);
+    setAudio(null);
+  } else {
+    const newAudio = new Audio(pageData.audioUrl);
+    newAudio.play().then(() => setIsPlaying(true)).catch(err => console.log("Playback failed:", err));
+    newAudio.addEventListener('ended', () => setIsPlaying(false));
+    setAudio(newAudio);
+  }
+};
 
   return (
     <div className="max-w-1/2 mx-auto px-4 py-10 text-center bg-[#FAF3E0] min-h-screen flex flex-col items-center">
