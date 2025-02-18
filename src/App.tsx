@@ -32,7 +32,7 @@ function App() {
             <Route path="/page6" element={<Page6 />} />
             <Route path="/page7" element={<Page7 />} />
             <Route path="/page8" element={<Page8 />} />
-            <Route path="*" element={<h1>Not Found</h1>} />
+            {/* <Route path="*" element={<h1>Not Found</h1>} /> */}
 
             
 
