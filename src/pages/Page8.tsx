@@ -57,19 +57,19 @@ function Page8() {
   }, [audio]);
 
   const handleAudioPlayback = () => {
-    if (!pageData.audioUrl) return;
+  if (!pageData.audioUrl) return;
 
-    if (audio) {
-      audio.pause();
-      setIsPlaying(false);
-      setAudio(null);
-    } else {
-      const newAudio = new Audio(pageData.audioUrl);
-      newAudio.play().then(() => setIsPlaying(true));
-      newAudio.addEventListener('ended', () => setIsPlaying(false));
-      setAudio(newAudio);
-    }
-  };
+  if (audio) {
+    audio.pause();
+    setIsPlaying(false);
+    setAudio(null);
+  } else {
+    const newAudio = new Audio(pageData.audioUrl);
+    newAudio.play().then(() => setIsPlaying(true)).catch(err => console.log("Playback failed:", err));
+    newAudio.addEventListener('ended', () => setIsPlaying(false));
+    setAudio(newAudio);
+  }
+};
 
   return (
     <div className="max-w-1/2 mx-auto px-4 py-10 text-center bg-[#FAF3E0] min-h-screen flex flex-col items-center">

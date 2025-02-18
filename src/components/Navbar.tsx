@@ -12,11 +12,11 @@ function Navbar() {
     {
       label: 'Information',
       subLinks: [
-        { path: '/page1', label: 'Page 1' },
-        { path: '/page2', label: 'Page 2' },
-        { path: '/page3', label: 'Page 3' },
-        { path: '/page4', label: 'Page 4' },
-        { path: '/page5', label: 'Page 5' },
+        { path: '/page1', label: 'दऱ्याचा राजा' },
+        { path: '/page2', label: 'जलपती' },
+        { path: '/page3', label: 'दर्यापती' },
+        { path: '/page4', label: 'किल्ले विजयदुर्ग' },
+        { path: '/page5', label: 'तोरणा किल्ला' },
         { path: '/page6', label: 'Page 6' },
         { path: '/page7', label: 'Page 7' },
         { path: '/page8', label: 'Page 8' },
@@ -32,7 +32,7 @@ function Navbar() {
           {/* Brand Logo */}
           <div className="flex-shrink-0 flex items-center">
             <Link to="/" className="font-medieval text-xl text-royal-800">
-              Shivaji Maharaj
+            Chhatrapati Shivaji Maharaj
             </Link>
           </div>
           {/* Desktop Links */}

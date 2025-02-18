@@ -1,36 +1,29 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Audio1 from '../assets/audio/Page4.mp3'
+
 
 function Page4() {
   // Define the page data, which includes multiple images
   const pageData = {
-    title: 'The Legacy of Chhatrapati Shivaji Maharaj',
-    description: 'Discover the life and achievements of Shivaji Maharaj, the founder of the Maratha Empire.',
+    title: 'किल्ले विजयदुर्ग',
+    description: '',
     images: [
-      'https://www.citybit.in/wp-content/uploads/2024/07/Raigad-Fort-Photos-1024x576.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb2ogFfg7gJu0RDQ5OBgYA1fkIXSaxVzDTw&s',
-      'https://sanketnow.com/wp-content/swift-ai/images/wp-content/uploads/2020/05/Raigad-Photography-9-jpg.webp',  // Add more images as needed
+      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTXXQD6TII8nQx1JM8IgicH38091rnLQLQ&s',
+      'https://tourmet.com/wp-content/uploads/2014/05/vijaydurg-fort2.jpg',
+      'https://hindi.holidayrider.com/wp-content/uploads/2019/08/compressed-xcz9.jpg',  // Add more images as needed
     ],
-    audioUrl: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3',
-    fullInfo: `छत्रपती शिवाजी महाराज हे एक दूरदर्शी नेतृत्व आणि शूर योद्धे होते ज्यांनी १७व्या शतकात मराठा साम्राज्याची स्थापना केली.
-    
-    त्यांच्या युद्धनीती, प्रगत प्रशासन आणि सर्व धर्मांबद्दलच्या सन्मानामुळे ते प्रसिद्ध होते. रायगड आणि प्रतापगड यांसारखी त्यांची दुर्गे त्यांच्या गौरवशाली इतिहासाचे साक्षीदार आहेत.
-    
-    त्यांच्या नौदल शक्ती आणि प्रशासनाने मजबूत आणि सशक्त साम्राज्याची पायाभरणी केली.
-    
-    शिवाजी महाराजांनी हिंदवी स्वराज्याची संकल्पना मांडली आणि ती प्रत्यक्षात आणण्यासाठी अपार मेहनत घेतली.
-    
-    त्यांनी शिस्तबद्ध सेना निर्माण केली, गनिमी काव्याने शत्रूवर विजय मिळवला आणि शेतकरी, व्यापारी तसेच सामान्य जनतेचे संरक्षण करण्यासाठी ठोस धोरणे आखली.
-    
-    त्यांचा राज्याभिषेक १६७४ मध्ये रायगड किल्ल्यावर मोठ्या थाटामाटात पार पडला.
-    
-    त्यांनी मजबूत किल्ले, उत्कृष्ट जलवाहतूक आणि प्रभावी गुप्तचर यंत्रणा विकसित केली.
-    
-    त्यांचा न्यायप्रिय आणि कणखर स्वभाव मराठा साम्राज्याच्या वाढीस पोषक ठरला.
-    
-    महाराजांनी प्रशासकीय सुधारणा घडवून आणल्या, विविध जाती-धर्मांच्या लोकांना बरोबर घेऊन साम्राज्य वाढवले.
-    
-    त्यांच्या पराक्रमामुळे ते आजही भारतीय इतिहासातील प्रेरणादायी नेतृत्व मानले जातात.`
+    audioUrl:Audio1,
+    fullInfo: `सिंधुदुर्ग जिल्हातील देवगड तालुक्यात 'विजयदुर्ग" हा अतिशय बळकट किल्ला उभा आहे. तीन बाजूना पाणी आणि एका बाजूला खुक्कीचा म्हणजे जमिनीचा मार्ग, अशी विशिष्ट भौगोलिक रचना असल्यामुळे हा विजयदुर्ग नैसर्गिकरीत्या बेलाग झाला आहे. विजयदुर्गाची बांधणी ही रेखीव आहे एकापाठोपाठ एक अशी तिहेरी तटबंदी किल्ल्याला अधिकाधिक मजबूत करत आहे. सत्तावीस बुलंद बुरुजांनी हा किल्ला वेढलेला आहे. ह्यातील काही बुरूज तर तिमजली आहेत. घनचक्कर, गोविंद, मनरंजन, सदारिव, सर्जा, व्यंकट, शाह, रिकरा, दर्या, राम, गणेश अशी त्यांतील काहीं बुरुजांची नावे आहेत.
+
+विजयदुर्गला छुपे दरवाजे आहेत. त्यातलाच आहे जिभीचा दरवाजा जिभी म्हणजे लाकडी दरवाजापुढे रचलेली दगडाची तटबंदी. द्याला हस्तीनख असेही म्हणतात. दहा-बारा एकर क्षेत्रफळात हा दुर्ग सामावला आहे. विजयदुर्गला पूर्वेकडील जिब्राल्टर असेही म्हणत कारण हा एक अजिंक्य किल्ला होता. ४० किलोमीटर लांब असलेली वाघोटन खाडी हे या किल्ल्याचे बलस्थान आहे.
+
+विजयदुर्ग हा किल्ला ११ व्या शतकाच्या अखेरीस शिलाहार घराण्यातील राजा भोजने बांधला. पुढे तो बहामनी व नंतर आदिलशाहीच्या ताब्यात होता. छत्रपती शिवाजी महाराजांनी १६६४ च्या ऑक्टोबर-नोव्हेंबरमध्ये विजयदुर्ग किल्ला जिंकला आणि त्याचं नामकरण केलं, 'विजयदुर्ग'. गिर्याचा किल्ला म्हणुन ह्या दुर्गाला 'घेरिया' असेही म्हणत.
+
+लंडन नावाचं चाळीस तोफांचं लढाऊ, चाळीस तोफांचीच चांडोस, सव्वीस तोफांचं व्हिक्टरी, सव्वीस तोफांचं व्हिक्टरी, अठरा तोफांचं रिव्हेंज, १६ तोफांचं पेलहॅम तसंच १६ तोफांचं डिफायन्स, टेरिबल बॉम्ब नावाचं एक बॉम्ब फेकणारं जहाज आणि इतर अनेक गलबतं, शिबाड, तिरकाट्या, अश्या कित्येक लढाऊ जहाज घेऊन इंग्रज, डच, पोर्तुगीजांनीविजयदुर्गाला वेढा घातला. पण त्यांना कधीच विजयदुर्ग जिकंता आला नाही.
+
+सरखेल कान्होजी आंग्रे आणि त्यांचे पुत्र संभाजी आंग्रे व तुळोजी आंग्रे यांच्या ताब्यात हा किल्ला इ.स. १७५६ पर्यंत होता. पेशवे व इंग्रज यांच्या संयुक्त सैन्याने १३ फेब्रुवारी १७५६ रोजी तुळाजी आंग्रे यांच्या सैन्याचा पराभव करून विजयदुर्ग ताब्यात घेतला. इंग्रज-पेशवे करारानुसार विजयदुर्ग पेशव्यांना देण्याचे ठरले होते परंतु इंग्रज सहजासहजी त्याला तयार झाले नाहीत. अखेर बाणकोट किल्ला व त्या जवळील सात गावे पेशव्यांकडून घेऊन इंग्रजांनी विजयदुर्ग आठ महिन्यानंतर पेशव्यांना दिला. पेशव्यांनी विजयदुर्गाचा प्रांत व सुभेदारी आनंदराव धुळप यांना दिली. १६६४ ते १८१८ पर्यंत या किल्ल्यावर मराठी अंमल होता. त्यानंतर हा किल्ला इंग्रजांनी ताब्यात घेतला.
+`
   };
 
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
@@ -57,19 +50,19 @@ function Page4() {
   }, [audio]);
 
   const handleAudioPlayback = () => {
-    if (!pageData.audioUrl) return;
+  if (!pageData.audioUrl) return;
 
-    if (audio) {
-      audio.pause();
-      setIsPlaying(false);
-      setAudio(null);
-    } else {
-      const newAudio = new Audio(pageData.audioUrl);
-      newAudio.play().then(() => setIsPlaying(true));
-      newAudio.addEventListener('ended', () => setIsPlaying(false));
-      setAudio(newAudio);
-    }
-  };
+  if (audio) {
+    audio.pause();
+    setIsPlaying(false);
+    setAudio(null);
+  } else {
+    const newAudio = new Audio(pageData.audioUrl);
+    newAudio.play().then(() => setIsPlaying(true)).catch(err => console.log("Playback failed:", err));
+    newAudio.addEventListener('ended', () => setIsPlaying(false));
+    setAudio(newAudio);
+  }
+};
 
   return (
     <div className="max-w-1/2 mx-auto px-4 py-10 text-center bg-[#FAF3E0] min-h-screen flex flex-col items-center">

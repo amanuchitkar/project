@@ -1,36 +1,27 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Audio1 from '../assets/audio/Page3.mp3'
+
 
 function Page3() {
   // Define the page data, which includes multiple images
   const pageData = {
-    title: 'The Legacy of Chhatrapati Shivaji Maharaj',
-    description: 'Discover the life and achievements of Shivaji Maharaj, the founder of the Maratha Empire.',
+    title: 'दर्यापती',
+    description: 'ज्याचे आरमार त्याचा समुद्र',
     images: [
-      'https://www.citybit.in/wp-content/uploads/2024/07/Raigad-Fort-Photos-1024x576.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb2ogFfg7gJu0RDQ5OBgYA1fkIXSaxVzDTw&s',
-      'https://sanketnow.com/wp-content/swift-ai/images/wp-content/uploads/2020/05/Raigad-Photography-9-jpg.webp',  // Add more images as needed
+      'https://braintordigitallibrary.wordpress.com/wp-content/uploads/2012/10/navy1.jpg',  // Add more images as needed
     ],
-    audioUrl: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3',
-    fullInfo: `छत्रपती शिवाजी महाराज हे एक दूरदर्शी नेतृत्व आणि शूर योद्धे होते ज्यांनी १७व्या शतकात मराठा साम्राज्याची स्थापना केली.
-    
-    त्यांच्या युद्धनीती, प्रगत प्रशासन आणि सर्व धर्मांबद्दलच्या सन्मानामुळे ते प्रसिद्ध होते. रायगड आणि प्रतापगड यांसारखी त्यांची दुर्गे त्यांच्या गौरवशाली इतिहासाचे साक्षीदार आहेत.
-    
-    त्यांच्या नौदल शक्ती आणि प्रशासनाने मजबूत आणि सशक्त साम्राज्याची पायाभरणी केली.
-    
-    शिवाजी महाराजांनी हिंदवी स्वराज्याची संकल्पना मांडली आणि ती प्रत्यक्षात आणण्यासाठी अपार मेहनत घेतली.
-    
-    त्यांनी शिस्तबद्ध सेना निर्माण केली, गनिमी काव्याने शत्रूवर विजय मिळवला आणि शेतकरी, व्यापारी तसेच सामान्य जनतेचे संरक्षण करण्यासाठी ठोस धोरणे आखली.
-    
-    त्यांचा राज्याभिषेक १६७४ मध्ये रायगड किल्ल्यावर मोठ्या थाटामाटात पार पडला.
-    
-    त्यांनी मजबूत किल्ले, उत्कृष्ट जलवाहतूक आणि प्रभावी गुप्तचर यंत्रणा विकसित केली.
-    
-    त्यांचा न्यायप्रिय आणि कणखर स्वभाव मराठा साम्राज्याच्या वाढीस पोषक ठरला.
-    
-    महाराजांनी प्रशासकीय सुधारणा घडवून आणल्या, विविध जाती-धर्मांच्या लोकांना बरोबर घेऊन साम्राज्य वाढवले.
-    
-    त्यांच्या पराक्रमामुळे ते आजही भारतीय इतिहासातील प्रेरणादायी नेतृत्व मानले जातात.`
+    audioUrl: Audio1,
+    fullInfo: `ई. स. १६५७ मध्ये शिवाजीमहाराजांनी कल्याण भिवंडी घेतल्यावर कल्याणच्या खाडीत सुमुहूर्तावर आपल्या आरमाराची पठाणे तरती केली. महाराजांच्या आरमाराची सुरुवात केली.
+
+वसईत जहाजे बांधणारे कुशल पोर्तुगीज कारागीर होते. त्यांच्या मदतीने शिवाजी महाराजांनी पहिली वीस लढाऊ गलबते बांधण्यास सुरुवात केली ही जहाजे आपण सिध्या विरुद्ध वापरण्याकरीता बांधीत आहोत असे शिवाजी महाराजांनी जाहीर केले. कारण असे जाहीर केल्याशिवाय पोर्तुगीज त्यांच्या जहाजांना कल्याण भिवंडीच्या खाडीतुन बाहेर समुद्रात पडू देणे शक्य नव्हते. इ.स १६५७ ते इ.स. १६५९ च्या दरम्यान शिवाजी महाराजांची वीस जहाजे तयार झाली शेवटपर्यंत लहान मोठी पाचशे जहाजे तयार करण्यात आली होती.
+
+शिवाजीमहाराजांच्या आरमारात गुराबा, तरोडी, तारवे, गलबते, शिबाड, पगार या प्रकारची जहाजे असल्याचे कृष्णाजी अनंत सभासद यांनी सांगितले आहे. लढाऊ 'जहाजात गलबत, गुराबा, बाभोर, तिरकती व पाल ही प्रमुख होती. गलबतापेक्षा गुराबा मोठ्या प्रमाणावर असत आणि पाल सर्वात भारी असे ही सर्व उथळ बांधणीची म्हणजे लांबीच्या प्रमाणात अधिक रुंदीची
+
+शिवाजी महाराजांच्या आरमारी व्यवस्थेत दोनशे जहाजांचा एक सुभा केला जात असे. मायनाक भंडारी व दौलतखान हे महाराजांच्या आरमाराचे आरमारी अधिकारी होते.
+
+शिवप्रतिष्ठान DBATU
+`
   };
 
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
@@ -57,19 +48,19 @@ function Page3() {
   }, [audio]);
 
   const handleAudioPlayback = () => {
-    if (!pageData.audioUrl) return;
+  if (!pageData.audioUrl) return;
 
-    if (audio) {
-      audio.pause();
-      setIsPlaying(false);
-      setAudio(null);
-    } else {
-      const newAudio = new Audio(pageData.audioUrl);
-      newAudio.play().then(() => setIsPlaying(true));
-      newAudio.addEventListener('ended', () => setIsPlaying(false));
-      setAudio(newAudio);
-    }
-  };
+  if (audio) {
+    audio.pause();
+    setIsPlaying(false);
+    setAudio(null);
+  } else {
+    const newAudio = new Audio(pageData.audioUrl);
+    newAudio.play().then(() => setIsPlaying(true)).catch(err => console.log("Playback failed:", err));
+    newAudio.addEventListener('ended', () => setIsPlaying(false));
+    setAudio(newAudio);
+  }
+};
 
   return (
     <div className="max-w-1/2 mx-auto px-4 py-10 text-center bg-[#FAF3E0] min-h-screen flex flex-col items-center">

@@ -1,36 +1,23 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Audio1 from '../assets/audio/Page5.mp3';
 
 function Page5() {
   // Define the page data, which includes multiple images
   const pageData = {
-    title: 'The Legacy of Chhatrapati Shivaji Maharaj',
-    description: 'Discover the life and achievements of Shivaji Maharaj, the founder of the Maratha Empire.',
+    title: 'तोरणा किल्ला',
+    description: 'तोरणा हा भारताच्या महाराष्ट्र राज्यातील सह्याद्री पर्वतरांगांमधील डोंगरी किल्ला आहे',
     images: [
-      'https://www.citybit.in/wp-content/uploads/2024/07/Raigad-Fort-Photos-1024x576.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb2ogFfg7gJu0RDQ5OBgYA1fkIXSaxVzDTw&s',
-      'https://sanketnow.com/wp-content/swift-ai/images/wp-content/uploads/2020/05/Raigad-Photography-9-jpg.webp',  // Add more images as needed
+      'https://staticimg.amarujala.com/assets/images/2019/02/03/torna-fort_1549185169.jpeg',
+      'https://staticimg.amarujala.com/assets/images/2019/02/03/torna-fort_1549185169.jpeg',
+      'https://scontent-bom2-2.xx.fbcdn.net/v/t39.30808-6/464302875_27534705986145276_6774211333405175073_n.jpg?stp=dst-jpg_p526x395_tt6&_nc_cat=111&ccb=1-7&_nc_sid=127cfc&_nc_ohc=queZ6l3Td-EQ7kNvgFPuALZ&_nc_oc=Adhh4jj-PT19lsKkx5O1_QiMyV9n063M3rkHQh-7XbhdfFUYF_KRwRamWWu7Q66heBI&_nc_zt=23&_nc_ht=scontent-bom2-2.xx&_nc_gid=AG_enJjHXut9-q3WhKXQewx&oh=00_AYCysXim0rmDrBgCz_vCBNPyK63oEIg-nNy9vxE9ATTdWQ&oe=67BAD0A8',  // Add more images as needed
     ],
-    audioUrl: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3',
-    fullInfo: `छत्रपती शिवाजी महाराज हे एक दूरदर्शी नेतृत्व आणि शूर योद्धे होते ज्यांनी १७व्या शतकात मराठा साम्राज्याची स्थापना केली.
-    
-    त्यांच्या युद्धनीती, प्रगत प्रशासन आणि सर्व धर्मांबद्दलच्या सन्मानामुळे ते प्रसिद्ध होते. रायगड आणि प्रतापगड यांसारखी त्यांची दुर्गे त्यांच्या गौरवशाली इतिहासाचे साक्षीदार आहेत.
-    
-    त्यांच्या नौदल शक्ती आणि प्रशासनाने मजबूत आणि सशक्त साम्राज्याची पायाभरणी केली.
-    
-    शिवाजी महाराजांनी हिंदवी स्वराज्याची संकल्पना मांडली आणि ती प्रत्यक्षात आणण्यासाठी अपार मेहनत घेतली.
-    
-    त्यांनी शिस्तबद्ध सेना निर्माण केली, गनिमी काव्याने शत्रूवर विजय मिळवला आणि शेतकरी, व्यापारी तसेच सामान्य जनतेचे संरक्षण करण्यासाठी ठोस धोरणे आखली.
-    
-    त्यांचा राज्याभिषेक १६७४ मध्ये रायगड किल्ल्यावर मोठ्या थाटामाटात पार पडला.
-    
-    त्यांनी मजबूत किल्ले, उत्कृष्ट जलवाहतूक आणि प्रभावी गुप्तचर यंत्रणा विकसित केली.
-    
-    त्यांचा न्यायप्रिय आणि कणखर स्वभाव मराठा साम्राज्याच्या वाढीस पोषक ठरला.
-    
-    महाराजांनी प्रशासकीय सुधारणा घडवून आणल्या, विविध जाती-धर्मांच्या लोकांना बरोबर घेऊन साम्राज्य वाढवले.
-    
-    त्यांच्या पराक्रमामुळे ते आजही भारतीय इतिहासातील प्रेरणादायी नेतृत्व मानले जातात.`
+    audioUrl: Audio1,
+    fullInfo: `छत्रपती शिवाजी महाराजांनी स्वराज्य स्थापना करीत असताना इ.स. १६४७ मध्ये सर्वप्रथम घेतलेला हा किल्ला आहे. छत्रपती शिवाजी महाराजांनी हा किल्ला घेऊन स्वराज्याचे तोरण बांधले म्हणून या किल्ल्याचे नाव तोरणा किल्ला असे ठेवण्यात आले.
+ महाराजांनी गडाची पाहणी करताना त्याच्या प्रचंड विस्तारामुळे याचे नाव बदलून 'प्रचंडगड' असे ठेवले. या किल्ल्यावर सापडलेल्या धनाचा उपयोग शिवाजी महाराजांनी राजगडाच्या बांधणीसाठी केला.
+
+तोरणा किल्ला कधी आणि कोणी बांधला याचा पुरावा आज उपलब्ध नाही. येथील लेण्यांच्या आणि मंदिरांच्या अवशेषांवरून हा शैवपंथाचा आश्रम असावा. इ. स. १४७० ते १४८६ च्या दरम्यान बहामनी राजवटीसाठी मलिक अहमद याने हा किल्ला जिंकला. पुढे हा किल्ला निजामशाहीत गेला. नंतर तो शिवाजी महाराजांनी घेतला व याचे नाव प्रचंडगड ठेवले आणि गडावर काही इमारती बांधल्या. महाराजांनी आग्र्याहून आल्यावर अनेक गडांचा जीर्णोद्धार केला. त्यात ५ हजार होन इतका खर्च त्यांनी तोरण्यावर केला. संभाजी महाराजांची निर्घृण हत्या झाल्यावर हा किल्ला मोगलांकडे गेला. शंकराजी नारायण सचिवांनी तो परत मराठ्यांच्या ताब्यात आणला. पुढे इ. स. १७०४ मध्ये औरंगजेबाने याला वेढा घातला व लढाई करून आपल्या ताब्यात आणला व याचे नाव फुतुउल्गैब म्हणजे दैवी विजय ठेवले. पण परत चार वर्षांनी सरनोबत नागोजी कोकाटे यांनी गडावर लोक चढवून गड पुन्हा मराठ्यांच्या ताब्यात आणला व यानंतर तोरणा कायम स्वराज्यातच राहिला. पुरंदरच्या तहात जे किल्ले मोगलांना दिले त्यामध्ये तोरणा महाराजांकडेच राहिला होता. विशेष म्हणजे औरंगजेब बादशहाने लढाई करून जिंकलेला असा हा मराठ्यांचा एकमेव किल्ला होय. तोरणा गडावर मेंगाई देवीचे प्राचीन मंदिर आहे.
+`
   };
 
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
@@ -57,19 +44,19 @@ function Page5() {
   }, [audio]);
 
   const handleAudioPlayback = () => {
-    if (!pageData.audioUrl) return;
+  if (!pageData.audioUrl) return;
 
-    if (audio) {
-      audio.pause();
-      setIsPlaying(false);
-      setAudio(null);
-    } else {
-      const newAudio = new Audio(pageData.audioUrl);
-      newAudio.play().then(() => setIsPlaying(true));
-      newAudio.addEventListener('ended', () => setIsPlaying(false));
-      setAudio(newAudio);
-    }
-  };
+  if (audio) {
+    audio.pause();
+    setIsPlaying(false);
+    setAudio(null);
+  } else {
+    const newAudio = new Audio(pageData.audioUrl);
+    newAudio.play().then(() => setIsPlaying(true)).catch(err => console.log("Playback failed:", err));
+    newAudio.addEventListener('ended', () => setIsPlaying(false));
+    setAudio(newAudio);
+  }
+};
 
   return (
     <div className="max-w-1/2 mx-auto px-4 py-10 text-center bg-[#FAF3E0] min-h-screen flex flex-col items-center">

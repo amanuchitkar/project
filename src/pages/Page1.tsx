@@ -1,36 +1,33 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
+import Page2 from './Page2';
+import Page3 from './Page3';
+import Audio1 from '../assets/audio/Page1.mp3'
+
 
 function Page1() {
   // Define the page data, which includes multiple images
   const pageData = {
-    title: 'The Legacy of Chhatrapati Shivaji Maharaj',
-    description: 'Discover the life and achievements of Shivaji Maharaj, the founder of the Maratha Empire.',
+    title: 'सह्याद्रीपती',
+    description: 'इतिहास सह्याद्रीतील घाटवाटाचा.',
     images: [
-      'https://www.citybit.in/wp-content/uploads/2024/07/Raigad-Fort-Photos-1024x576.jpg',
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUb2ogFfg7gJu0RDQ5OBgYA1fkIXSaxVzDTw&s',
-      'https://sanketnow.com/wp-content/swift-ai/images/wp-content/uploads/2020/05/Raigad-Photography-9-jpg.webp',  // Add more images as needed
+      'https://2.bp.blogspot.com/-bvTn7pcq0Zw/U79l08jtelI/AAAAAAAAC_w/AuGZrthCUhs/s720/Image_4.jpg',
+      'https://i0.wp.com/footlooseinme.com/wp-content/uploads/2019/08/dsc_0228.jpg?fit=4288%2C2848&ssl=1',
+      'https://images.indianexpress.com/2021/08/Aug11-Bom-tiger-3col.jpg?w=389',  // Add more images as needed
     ],
-    audioUrl: 'http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3',
-    fullInfo: `छत्रपती शिवाजी महाराज हे एक दूरदर्शी नेतृत्व आणि शूर योद्धे होते ज्यांनी १७व्या शतकात मराठा साम्राज्याची स्थापना केली.
-    
-    त्यांच्या युद्धनीती, प्रगत प्रशासन आणि सर्व धर्मांबद्दलच्या सन्मानामुळे ते प्रसिद्ध होते. रायगड आणि प्रतापगड यांसारखी त्यांची दुर्गे त्यांच्या गौरवशाली इतिहासाचे साक्षीदार आहेत.
-    
-    त्यांच्या नौदल शक्ती आणि प्रशासनाने मजबूत आणि सशक्त साम्राज्याची पायाभरणी केली.
-    
-    शिवाजी महाराजांनी हिंदवी स्वराज्याची संकल्पना मांडली आणि ती प्रत्यक्षात आणण्यासाठी अपार मेहनत घेतली.
-    
-    त्यांनी शिस्तबद्ध सेना निर्माण केली, गनिमी काव्याने शत्रूवर विजय मिळवला आणि शेतकरी, व्यापारी तसेच सामान्य जनतेचे संरक्षण करण्यासाठी ठोस धोरणे आखली.
-    
-    त्यांचा राज्याभिषेक १६७४ मध्ये रायगड किल्ल्यावर मोठ्या थाटामाटात पार पडला.
-    
-    त्यांनी मजबूत किल्ले, उत्कृष्ट जलवाहतूक आणि प्रभावी गुप्तचर यंत्रणा विकसित केली.
-    
-    त्यांचा न्यायप्रिय आणि कणखर स्वभाव मराठा साम्राज्याच्या वाढीस पोषक ठरला.
-    
-    महाराजांनी प्रशासकीय सुधारणा घडवून आणल्या, विविध जाती-धर्मांच्या लोकांना बरोबर घेऊन साम्राज्य वाढवले.
-    
-    त्यांच्या पराक्रमामुळे ते आजही भारतीय इतिहासातील प्रेरणादायी नेतृत्व मानले जातात.`
+    audioUrl: Audio1,
+    fullInfo: `" समंदे तलाश बेकयास"
+
+'आमच्या या कठीण मुलुखात कल्पनेचा घोडा नाचवणे ही अशक्य आहे.
+
+या छत्रपती शिवरायांनी औरंगजेबास लिहिलेल्या एक फारसी पत्रात हा वाक्प्रचार आहे. त्यावरून महाराजांना सह्याद्री प्रती अभिमान दिसून येतो.
+
+साधक्षात इंद्राच्या राजधानीला लाजवेल असे सौंदर्य, असणारा आणि हिमालयाच्या पण खांद्याला खांदा लावायची हिंमत असणारा हाच तो सह्याद्री.
+
+पोर्तुगीज, इंग्रज आणि डच आक्रमकांपासून देशाला वाचविण्यासाठी, स्वराज्याला पूर्णत्व आणण्यासाठी स्वतःच्या सामर्थ्यशाली आरमाराची आवश्यकता महाराजांना जाणवलेली होती. भौगोलिकतेचा अचूक फायदा घेत राजांनी जमिनीवर गनिमी कावा तंत्र अवलंबिलेलं.
+
+सह्याद्रीतील घाटवाटा म्हणजे महाराष्ट्राच्या धमण्या आणि रक्तवाहिन्या, महाराष्ट्राच्या सर्वांगिण विकासात या घाटवाटांचा अतिशय महत्त्वाचा वाटा मग तो प्राचीन अर्थकारणाच रसा व वारसा सांगणारा, दख्खनच्या पठाराची नाळ जगाशी जोडणारा नानेघाट असो वा इगतपूरीचा कसारा, खंडाळा, ताम्हिणी ते अगदी कोल्हापूरच्या फोंडा, आंबोली सह सह्याद्री आणि सातपुड्यातील उभ्या आडव्या घाटवाटांचे जाळे आजही आपले महत्त्व अबाधीत ठेवून आहे.
+`
   };
 
   const [audio, setAudio] = useState<HTMLAudioElement | null>(null);
@@ -57,19 +54,19 @@ function Page1() {
   }, [audio]);
 
   const handleAudioPlayback = () => {
-    if (!pageData.audioUrl) return;
+  if (!pageData.audioUrl) return;
 
-    if (audio) {
-      audio.pause();
-      setIsPlaying(false);
-      setAudio(null);
-    } else {
-      const newAudio = new Audio(pageData.audioUrl);
-      newAudio.play().then(() => setIsPlaying(true));
-      newAudio.addEventListener('ended', () => setIsPlaying(false));
-      setAudio(newAudio);
-    }
-  };
+  if (audio) {
+    audio.pause();
+    setIsPlaying(false);
+    setAudio(null);
+  } else {
+    const newAudio = new Audio(pageData.audioUrl);
+    newAudio.play().then(() => setIsPlaying(true)).catch(err => console.log("Playback failed:", err));
+    newAudio.addEventListener('ended', () => setIsPlaying(false));
+    setAudio(newAudio);
+  }
+};
 
   return (
     <div className="max-w-1/2 mx-auto px-4 py-10 text-center bg-[#FAF3E0] min-h-screen flex flex-col items-center">
@@ -78,6 +75,7 @@ function Page1() {
         animate={{ opacity: 1, y: 0 }}
         className="text-xl font-medieval font-bold text-royal-800 mb-4"
       >
+        <h1 className='p-6 text-3xl font-medieval font-bold'>दऱ्याचा राजा</h1>
         {pageData.title}
       
       </motion.h1>
@@ -107,6 +105,8 @@ function Page1() {
         <h2 className="text-lg font-semibold text-[#8B4513] mb-3 text-center font-serif">संपूर्ण माहिती</h2>
         <p className="text-[#5C4033] leading-tight text-justify text-[0.6rem] font-serif whitespace-pre-line">{pageData.fullInfo}</p>
       </div>
+      <Page2/>
+      <Page3/>
     </div>
   );
 }
