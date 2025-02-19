@@ -27,7 +27,7 @@ function Footer() {
         </div>
         <div className="mt-8 pt-8 border-t border-royal-700 text-center">
           <p className="text-royal-300">
-            © {new Date().getFullYear()} Shivaji Maharaj Tribute. All rights reserved.
+            © {new Date().getFullYear()} Shivaji Maharaj. All rights reserved.
           </p>
         </div>
       </div>

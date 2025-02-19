@@ -12,6 +12,8 @@ import Page5 from './pages/Page5';
 import Page6 from './pages/Page6';
 import Page7 from './pages/Page7';
 import Page8 from './pages/Page8';
+import Page9 from './pages/Page9';
+
 
 function App() {
   return (
@@ -31,6 +33,7 @@ function App() {
             <Route path="/page6" element={<Page6 />} />
             <Route path="/page7" element={<Page7 />} />
             <Route path="/page8" element={<Page8 />} />
+            <Route path="/page9" element={<Page9 />} />
           </Routes>
         </main>
         <Footer />

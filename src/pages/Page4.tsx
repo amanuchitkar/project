@@ -9,8 +9,9 @@ function Page4() {
     title: 'किल्ले विजयदुर्ग',
     description: '',
     images: [
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaRTXXQD6TII8nQx1JM8IgicH38091rnLQLQ&s',
       'https://tourmet.com/wp-content/uploads/2014/05/vijaydurg-fort2.jpg',
+      'https://durgbharari.in/wp-content/uploads/2020/11/Vijaydurg.jpg',
+      'https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhiEuyaKk4l_Fprud-Nf_hR0csDjWs8rCuArqY1pQF9NqGzE9JhRJKs4eg33jIDcHiVzLjTcG4gJ7030dEUzCim1K1OuyGKd096paa6KMer6KSYWoRFdXOEVwEFiaO59LCuuSdNScab_1-H8WCR8P-5ED-nb6HUql4IG2_mMyPyRuyPyUKQVLyfEWAX5Rg/w400-h248/Vijaydurg%20Fort%203.jpg',
       'https://hindi.holidayrider.com/wp-content/uploads/2019/08/compressed-xcz9.jpg',  // Add more images as needed
     ],
     audioUrl:Audio1,
